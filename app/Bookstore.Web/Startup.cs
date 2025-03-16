@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Bookstore.Web.Setup; // Assuming LoggingSetup is in this namespace
 
 namespace Bookstore.Web
 {

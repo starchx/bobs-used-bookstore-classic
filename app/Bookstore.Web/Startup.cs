@@ -18,10 +18,12 @@ namespace Bookstore.Web
         public void ConfigureServices(IServiceCollection services)
         {
             // Configure services here
-            LoggingSetup.ConfigureLogging();
-            ConfigurationSetup.ConfigureConfiguration();
-            DependencyInjectionSetup.ConfigureDependencyInjection(services);
-            AuthenticationConfig.ConfigureAuthentication(services);
+            // TODO: Add custom configurations for logging, general configuration, dependency injection, and authentication
+            // Example: services.AddLogging();
+            // Example: services.AddAuthentication();
+            // Example: services.AddHttpContextAccessor();
+
+            services.AddControllersWithViews();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
